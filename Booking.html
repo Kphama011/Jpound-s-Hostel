@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Jpound's Hostel | Booking</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        Jpound's Hostel
+    </div>
+
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+
+        <li>
+            <a href="About.html">
+                About
+            </a>
+        </li>
+
+
+        <li>
+            <a href="Contact.html">
+                Contact
+            </a>
+        </li>
+
+
+        <li>
+            <a href="Booking.html">
+                Booking
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+
+<section id ="booking">
+
+
+    <h2 class="section-title">
+        Book Your Accommodation
+    </h2>
+
+
+
+    <div class="booking-container">
+
+
+        <h3>
+            Step 1: Select a Room
+        </h3>
+
+
+        <br>
+
+
+        <div class="rooms">
+
+
+            <div class="room-card"
+                 id="room1"
+                 onclick="selectRoom(1)">
+
+                <h3>Room 1</h3>
+
+                <p>4 Beds Available</p>
+
+            </div>
+
+
+            <div class="room-card"
+                 id="room2"
+                 onclick="selectRoom(2)">
+
+                <h3>Room 2</h3>
+
+                <p>4 Beds Available</p>
+
+            </div>
+
+
+            <div class="room-card"
+                 id="room3"
+                 onclick="selectRoom(3)">
+
+                <h3>Room 3</h3>
+
+                <p>4 Beds Available</p>
+
+            </div>
+
+
+            <div class="room-card"
+                 id="room4"
+                 onclick="selectRoom(4)">
+
+                <h3>Room 4</h3>
+
+                <p>4 Beds Available</p>
+
+            </div>
+
+
+            <div class="room-card"
+                 id="room5"
+                 onclick="selectRoom(5)">
+
+                <h3>Room 5</h3>
+
+                <p>4 Beds Available</p>
+
+            </div>
+
+
+            <div class="room-card"
+                 id="room6"
+                 onclick="selectRoom(6)">
+
+                <h3>Room 6</h3>
+
+                <p>4 Beds Available</p>
+
+            </div>
+
+
+            <div class="room-card"
+                 id="room7"
+                 onclick="selectRoom(7)">
+
+                <h3>Room 7</h3>
+
+                <p>4 Beds Available</p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div id="bedSection">
+
+
+            <h3 id="roomTitle">
+                Step 2: Select Your Bed
+            </h3>
+
+
+
+            <div class="beds">
+
+
+                <div class="bed"
+                     id="A1"
+                     onclick="selectBed('A1')">
+
+                    <h3>Bed A1</h3>
+
+                </div>
+
+
+
+                <div class="bed"
+                     id="A2"
+                     onclick="selectBed('A2')">
+
+                    <h3>Bed A2</h3>
+
+                </div>
+
+
+
+                <div class="bed"
+                     id="B1"
+                     onclick="selectBed('B1')">
+
+                    <h3>Bed B1</h3>
+
+                </div>
+
+
+
+                <div class="bed"
+                     id="B2"
+                     onclick="selectBed('B2')">
+
+                    <h3>Bed B2</h3>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <h3>
+            Step 3: Guest Information
+        </h3>
+
+
+        <br>
+
+
+        <div class="form-grid">
+
+
+            <div>
+
+                <label>
+                    Full Name
+                </label>
+
+
+                <input
+                    type="text"
+                    id="guestName"
+                    placeholder="Enter your name">
+
+            </div>
+
+
+
+            <div>
+
+                <label>
+                    Email
+                </label>
+
+
+                <input
+                    type="email"
+                    id="guestEmail"
+                    placeholder="Enter your email">
+
+            </div>
+
+
+
+            <div>
+
+                <label>
+                    Check-in Date
+                </label>
+
+
+                <input
+                    type="date"
+                    id="checkIn">
+
+            </div>
+
+
+
+            <div>
+
+                <label>
+                    Check-out Date
+                </label>
+
+
+                <input
+                    type="date"
+                    id="checkOut">
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="payment-box">
+
+
+            <h3>
+                Step 4: Payment Information
+            </h3>
+
+
+            <label>
+                Payment Method
+            </label>
+
+
+            <select id="paymentMethod">
+
+
+                <option value="">
+                    Select Payment Method
+                </option>
+
+
+                <option value="Mobile Money">
+                    Mobile Money
+                </option>
+
+
+                <option value="Bank Transfer">
+                    Bank Transfer
+                </option>
+
+
+                <option value="Card Payment">
+                    Card Payment
+                </option>
+
+
+            </select>
+
+
+
+            <div class="payment-info">
+
+
+                <p>
+
+                    <strong>
+                        Mobile Money Number:
+                    </strong>
+
+                    024 123 4567
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    <strong>
+                        Account Name:
+                    </strong>
+
+                    Jpound's Hostel
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <button onclick="bookRoom()">
+
+            Confirm Booking
+
+        </button>
+
+
+        <p id="message"></p>
+
+
+    </div>
+
+
+</section>
+
+
+
+<footer>
+
+    <p>
+        © 2026 Jpound's Hostel. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>
